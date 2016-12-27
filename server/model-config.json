@@ -1,0 +1,103 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "emailSender"
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "wxplatform": {
+    "dataSource": "db",
+    "public": true
+  },
+  "verify_ticket": {
+    "dataSource": "db",
+    "public": true
+  },
+  "auth_info": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "role": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "userInfo": {
+    "dataSource": "db",
+    "public": true
+  },
+  "rules": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "ComAccessToken": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "user": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "AuthToken": {
+    "dataSource": "db",
+    "public": false,
+    "$promise": {},
+    "$resolved": true
+  },
+  "JsTicket": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Material": {
+    "dataSource": "db",
+    "public": false,
+    "$promise": {},
+    "$resolved": true
+  },
+  "WxFollowers": {
+    "dataSource": "db",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  }
+}

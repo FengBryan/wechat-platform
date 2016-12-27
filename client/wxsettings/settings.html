@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script>
+$(document).ready(function(){
+	$.get('http://socialinzen.inzen.com.cn/api/getdefault',{},function(res)
+		{   
+			//alert(res.appid);
+			$("#appid").val(res.appid);
+			$("#appsecret").val(res.appsecret);
+			$("#mainpage").val(res.mainpage);
+			//alert($("#appid").val());
+		});
+	$("#set").click(function()
+		{
+			 $.post('http://socialinzen.inzen.com.cn/wechat/settings',
+			{
+				appid: $("#appid").val(),
+				appsecret: $("#appsecret").val(),
+				mainpage: $("#mainpage").val()
+			},function(res)
+			{
+				//alert(res);
+			});
+		});
+
+});
+	
+</script>
+</head>
+<body>
+appid:<input type='text' id='appid' /><br>
+appsecret:<input type='text'  id='appsecret'/><br>
+跳转页面:<input type='text' id='mainpage'><br>
+<button id='set'>设置</button>
+</body>
+</html>

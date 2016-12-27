@@ -1,0 +1,12 @@
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<h1>1111</h1>
+<input type="button" id="logout" >logout</input>
+<script>
+  $(document).ready(function () {
+    $('#logout').onclick(function () {
+      $.post('/apis/user/logout',function (res) {
+        alert(res);
+      });
+    });
+  });
+</script>

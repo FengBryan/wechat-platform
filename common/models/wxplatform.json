@@ -1,0 +1,38 @@
+{
+  "name": "wxplatform",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "appid": {
+      "type": "string",
+      "required": true
+    },
+    "appsecret": {
+      "type": "string",
+      "required": true
+    },
+    "encodingAESKey": {
+      "type": "string",
+      "required": true
+    },
+    "token": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

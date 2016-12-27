@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link href="style.css" type="text/css" rel="stylesheet">
+   <script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+    <title></title>
+</head>
+<body>
+<div class='login_putin'>
+  <ul>
+    <li><input type="text" id="account"></li>
+    <li><input type='password' id='password' ></li>
+  </ul>
+</div>
+<div class="login_submit">
+  <input type="submit" value="login" id="user_submit">
+</div>
+<script>
+  $(document).ready(function()
+  {
+    var account = $('#account').val();
+    var password = $('#password').val();
+    $('#user_submit').click(function()
+    {
+      if (check(account,password))
+      {
+        $.post('http://socialinzen.inzen.com.cn/user/api/login',{username:account,password:password},function(res){
+          if (res.status=='success')
+          {
+            alert('login success');
+          }
+        });
+      }
+
+    });
+
+  });
+  function check(username,pswd)
+  {
+    if (username.length<6)
+    {
+      return 'username too short';
+    }
+    if (pswd.length<6)
+    {
+      return 'password too short';
+    }
+    return '';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{ "appenders":
+[
+  {
+    "type": "dateFile",
+    "filename": "/var/www/see2pick/logs/see2pick.log",
+    "pattern": "-yyyy-MM-dd",
+    "alwaysIncludePattern": false,
+    "category" : "info"
+  },
+  {
+    "type": "dateFile",
+    "filename": "/var/www/see2pick/logs/see2pick-err.log",
+    "pattern": "-yyyy-MM-dd",
+    "alwaysIncludePattern": false,
+    "category" : "console"
+  }],
+  "replaceConsole": true,
+  "levels": {"info":"INFO","console":"WARN"}
+}

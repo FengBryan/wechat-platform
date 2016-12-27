@@ -1,0 +1,63 @@
+{
+  "name": "WxFollowers",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "appid": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "groupid": {
+      "type": "string"
+    },
+    "headurl": {
+      "type": "string",
+      "required": false
+    },
+    "language": {
+      "type": "string"
+    },
+    "nickname": {
+      "type": "string"
+    },
+    "openid": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "province": {
+      "type": "string"
+    },
+    "remark": {
+      "type": "string"
+    },
+    "sex": {
+      "type": "string"
+    },
+    "subscribe_time": {
+      "type": "string"
+    },
+    "tagid_list": {
+      "type": [
+        "string"
+      ]
+    },
+    "unionid": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

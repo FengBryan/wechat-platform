@@ -1,0 +1,29 @@
+{
+  "name": "rules",
+  "base": "PersistedModel",
+  "strict": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "reply": {
+      "type": "object",
+      "required": true
+    },
+    "appid": {
+      "type": "string",
+      "id": false,
+      "required": true
+    },
+    "request": {
+      "type": "string",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

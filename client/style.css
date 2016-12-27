@@ -1,0 +1,15 @@
+.login_putin ul li input
+{
+  margin: auto 150px auto 50px;
+  width:50%;
+  padding: 1em 2em 1em 5.4em;
+  -webkit-border-radius:.3em;
+  -moz-border-radius: .3em;
+  border: 1px solid #999;
+
+}
+.login_submit
+{
+  height: 40px;
+  margin:60px auto 0 auto;
+}

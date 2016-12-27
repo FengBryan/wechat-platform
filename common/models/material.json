@@ -1,0 +1,35 @@
+{
+  "name": "Material",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "mediaId": {
+      "type": "string",
+      "id": true,
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "desc": {
+      "type": "object",
+      "required": false
+    },
+    "appid": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

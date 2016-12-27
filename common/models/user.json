@@ -1,0 +1,55 @@
+{
+  "name": "user",
+  "base": "User",
+  "strict": false,
+  "public": false,
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true,
+    "emailVerificationRequired": true
+  },
+  "properties": {
+    "appid": {
+      "type": "string",
+      "id": false,
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "rules": {
+      "type": "hasMany",
+      "model": "rules",
+      "foreignKey": "appid"
+    },
+    "authTokens": {
+      "type": "hasOne",
+      "model": "AuthToken",
+      "foreignKey": "appid"
+    },
+    "jsTickets": {
+      "type": "hasOne",
+      "model": "JsTicket",
+      "foreignKey": "appid"
+    },
+    "materials": {
+      "type": "hasMany",
+      "model": "Material",
+      "foreignKey": "appid"
+    },
+    "wxFollowers": {
+      "type": "hasMany",
+      "model": "WxFollowers",
+      "foreignKey": "appid"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

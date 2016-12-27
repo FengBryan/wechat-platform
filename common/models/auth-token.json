@@ -1,0 +1,31 @@
+{
+  "name": "AuthToken",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "token": {
+      "type": "string",
+      "required": true
+    },
+    "expire": {
+      "type": "string",
+      "required": true
+    },
+    "refresh": {
+      "type": "string",
+      "required": true
+    },
+    "appid": {
+      "type": "string",
+      "id": true,
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

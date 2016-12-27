@@ -1,0 +1,27 @@
+{
+  "db": {
+    "database": "socialinzen",
+    "name": "db",
+    "connector": "mongodb",
+    "user": "root"
+  },
+  "emailSender": {
+    "name": "emailSender",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.exmail.qq.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "bryan.feng@inzen.com.cn",
+          "pass": "aa4655"
+        }
+      }
+    ]
+  }
+}
